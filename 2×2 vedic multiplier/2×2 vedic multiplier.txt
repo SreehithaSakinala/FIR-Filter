@@ -1,0 +1,12 @@
+// 2x2 Vedic Multiplier
+module vedic2(s, a, b);
+input [1:0] a, b;
+output [3:0] s;
+wire c, d, e, f;
+and(s[0], a[0], b[0]);
+and(c, a[1], b[0]);
+and(d, a[0], b[1]);
+and(e, a[1], b[1]);
+halfadder h1(s[1], f, c, d);
+halfadder h2(s[2], s[3], e, f);
+endmodule
