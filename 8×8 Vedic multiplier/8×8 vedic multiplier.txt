@@ -1,0 +1,23 @@
+// 8x8 Vedic multiplier
+module vedic8(s,a,b);
+input [7:0]a,b;
+output [15:0]s;
+wire c1,c2,c3;
+wire [7:0]w,x,y,z;
+wire [7:0]sum2,p1,sum1,sum3,p2;
+wire [15:0]final;
+wire [7:0]s_high;
+vedic4 vm1(w,a[3:0],b[3:0]);
+vedic4 vm2(x,a[3:0],b[7:4]);
+vedic4 vm3(y,a[7:4],b[3:0]);
+vedic4 vm4(z,a[7:4],b[7:4]);
+adder8 add1(sum1,c1,x,y,1'b0);
+assign p1={4'b0000,w[7:4]};
+adder8 add2(sum2,c2,p1,sum1[7:0],1'b0);
+assign p2={c1,3'b000,sum2[7:4]};
+adder8 add3(s_high,c3,z[7:0],p2,1'b0);
+assign final[15:8]=s_high;
+assign final[7:4]=sum2[3:0];
+assign final[3:0]=w[3:0];
+assign s=final;
+endmodule

@@ -1,0 +1,16 @@
+//8 bit ripple carry adder
+module adder8(s,carry,a,b,cin);
+input [7:0]a,b;
+input cin;
+output carry;
+output [7:0]s;
+wire c0,c1,c2,c3,c4,c5,c6;
+fulladder fa1(s[0],c0,a[0],b[0],cin);
+fulladder fa2(s[1],c1,a[1],b[1],c0);
+fulladder fa3(s[2],c2,a[2],b[2],c1);
+fulladder fa4(s[3],c3,a[3],b[3],c2);
+fulladder fa5(s[4],c4,a[4],b[4],c3);
+fulladder fa6(s[5],c5,a[5],b[5],c4);
+fulladder fa7(s[6],c6,a[6],b[6],c5);
+fulladder fa8(s[7],carry,a[7],b[7],c6);
+endmodule
