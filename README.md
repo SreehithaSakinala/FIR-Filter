@@ -60,9 +60,6 @@ fir-filter-vedic-verilog/
 
 <img width="1040" height="128" alt="image" src="https://github.com/user-attachments/assets/5d26f14f-6551-4b86-98ec-f641dc93d4ab" />
 
-<img width="1040" height="128" alt="image" src="https://github.com/user-attachments/assets/44ef6b5f-477d-4a4a-a074-af4f4c0a3397" />
-
-## 📉 Block Diagram
 
 
 
@@ -81,3 +78,8 @@ fir-filter-vedic-verilog/
 
 *https://www.linkedin.com/in/sreehitha-sakinala-68a157220
 * https://github.com/SreehithaSakinala
+
+
+## Results
+  <img width="1137" height="478" alt="image" src="https://github.com/user-attachments/assets/368baf9d-ad3e-426a-b325-dda6c50cdd27" />
+
