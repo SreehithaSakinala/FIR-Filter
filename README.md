@@ -50,7 +50,7 @@ fir-filter-vedic-verilog/
 │   └── fir_waveform.png
 │
 ├── .gitignore                # Ignored temp/sim files
-├── LICENSE                   # License (MIT recommended)
+|
 └── README.md                 # Project overview and usage guide
 
 
